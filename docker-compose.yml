@@ -1,0 +1,9 @@
+version: "3.5"
+services:
+  frps:
+    container_name: frps
+    image: youuy/frp-frps
+    volumes:
+    - "./config:/app/config"
+    - "./logs:/app/logs"
+    restart: unless-stopped
